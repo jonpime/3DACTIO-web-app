@@ -1,5 +1,7 @@
-{ "name": "skote-react-hook",
+{ 
+  "name": "skote-react-hook",
   "version": "2.0.0",
+  "homepage": "https://jonpime.github.io/3DACTIO-web-app",
   "private": true,
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "40.1.0",
@@ -96,6 +98,8 @@
     "yup": "^1.2.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build --max_old_space_size=8000 build",
     "lint": "eslint .",
@@ -103,8 +107,9 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md,html,css,less,scss}\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  
+
   },
+  
   "eslintConfig": {
     "extends": [
       "eslint:recommended",
@@ -160,6 +165,7 @@
     "autoprefixer": "10.4.5"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "eslint-config-standard-react": "^9.2.0",
     "eslint-plugin-react": "^7.20.6",
     "prettier": "^2.1.1"

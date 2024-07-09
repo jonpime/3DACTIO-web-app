@@ -12,11 +12,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <Provider store={store}>
       <React.Fragment>
-        <BrowserRouter>
+        <BrowserRouter basename="/3DACTIO-web-app">
           <App />
         </BrowserRouter>
       </React.Fragment>
     </Provider>
 );
 
-serviceWorker.unregister()
+serviceWorker.unregister();
