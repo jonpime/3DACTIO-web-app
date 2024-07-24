@@ -267,7 +267,7 @@ const Chat = () => {
       <div className="page-content">
         <Container fluid>
           {/* Render Breadcrumb */}
-          <Breadcrumbs title="Skote" breadcrumbItem="Chat" />
+          <Breadcrumbs title="" breadcrumbItem="Chat" />
 
           <Row>
             <Col lg="12">

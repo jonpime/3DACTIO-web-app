@@ -22,6 +22,9 @@ import SocialSource from "./SocialSource";
 import ActivityComp from "./ActivityComp";
 import TopCities from "./TopCities";
 import LatestTranaction from "./LatestTranaction";
+import FillingPercentage from "./filling"
+import StrategyElements from "./strategyelements"
+import Vision3D from "./vision";
 
 //Import Breadcrumb
 import Breadcrumbs from "../../components/Common/Breadcrumb";
@@ -84,47 +87,33 @@ const Dashboard = props => {
   //meta title
   document.title = "Dashboard | 3D ACTIO";
 
+  const item = {
+    location: "Some location", // Ajusta esta propiedad según tus datos
+    value: "Some value", // Ajusta esta propiedad según tus datos
+  };
+
   return (
     <React.Fragment>
       <div className="page-content">
         <Container fluid>
           {/* Render Breadcrumb */}
-          <Breadcrumbs title={props.t("Dashboard")} breadcrumbItem={props.t("Dashboard")} />
+          <Breadcrumbs title={props.t("")} breadcrumbItem={props.t("Dashboard")} />
 
           <Row>
             <Col xl="4">
               <WelcomeComp />
-              <MonthlyEarning />
+              <FillingPercentage item={item} />
+              <ActivityComp />
             </Col>
             <Col xl="8">
-              <Row>
-                {(reports || [])?.map((report, key) => (
-                  <Col md="4" key={"_col_" + key}>
-                    <Card className="mini-stats-wid">
-                      <CardBody>
-                        <div className="d-flex">
-                          <div className="flex-grow-1">
-                            <p className="text-muted fw-medium">
-                              {report.title}
-                            </p>
-                            <h4 className="mb-0">{report.description}</h4>
-                          </div>
-                          <div className="avatar-sm rounded-circle bg-primary align-self-center mini-stat-icon">
-                            <span className="avatar-title rounded-circle bg-primary">
-                              <i className={"bx " + report.iconClass + " font-size-24"}></i>
-                            </span>
-                          </div>
-                        </div>
-                      </CardBody>
-                    </Card>
-                  </Col>
-                ))}
-              </Row>
-
+              <StrategyElements item={item}/>
+            <Col xl="12">
+              <Vision3D item={item} />
+            </Col>  
               <Card>
                 <CardBody>
                   <div className="d-sm-flex flex-wrap">
-                    <h4 className="card-title mb-4">Email Sent</h4>
+                    <h4 className="card-title mb-4">Business Statistics</h4>
                     <div className="ms-auto">
                       <ul className="nav nav-pills">
                         <li className="nav-item">
@@ -156,59 +145,13 @@ const Dashboard = props => {
           </Row>
 
           <Row>
-            <Col xl="4">
-              <SocialSource />
-            </Col>
-            <Col xl="4">
-              <ActivityComp />
-            </Col>
-
-            <Col xl="4">
-              <TopCities />
-            </Col>
-          </Row>
-
-          <Row>
             <Col lg="12">
               <LatestTranaction />
             </Col>
           </Row>
         </Container>
       </div>
-
-      {/* subscribe ModalHeader */}
-      <Modal isOpen={subscribeModal} role="dialog" autoFocus={true} centered data-toggle="modal"
-        toggle={() => { setSubscribeModal(!subscribeModal); }} >
-        <div>
-          <ModalHeader className="border-bottom-0" toggle={() => { setSubscribeModal(!subscribeModal); }}></ModalHeader>
-        </div>
-        <ModalBody>
-          <div className="text-center mb-4">
-            <div className="avatar-md mx-auto mb-4">
-              <div className="avatar-title bg-light  rounded-circle text-primary h1">
-                <i className="mdi mdi-email-open"></i>
-              </div>
-            </div>
-
-            <Row className="justify-content-center">
-              <Col xl={10}>
-                <h4 className="text-primary">Subscribe !</h4>
-                <p className="text-muted font-size-14 mb-4">
-                  Subscribe our newletter and get notification to stay update.
-                </p>
-
-                <div className="input-group rounded bg-light">
-                  <Input type="email" className="form-control bg-transparent border-0" placeholder="Enter Email address" />
-                  <Button color="primary" type="button" id="button-addon2">
-                    <i className="bx bxs-paper-plane"></i>
-                  </Button>
-                </div>
-              </Col>
-            </Row>
-          </div>
-        </ModalBody>
-      </Modal>
-
+      
       <Modal isOpen={modal} role="dialog" autoFocus={true} centered={true} className="exampleModal" tabIndex="-1"
         toggle={() => { setModal(!modal); }}>
         <div>

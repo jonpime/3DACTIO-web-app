@@ -30,7 +30,7 @@ const PagesFaqs = () => {
       <div className="page-content">
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Utility" breadcrumbItem="FAQs" />
+          <Breadcrumbs title="" breadcrumbItem="FAQs" />
 
           <div className="checkout-tabs">
             <Row>

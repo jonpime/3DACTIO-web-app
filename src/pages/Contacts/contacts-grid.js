@@ -48,7 +48,7 @@ const ContactsGrid = () => {
       <div className="page-content">
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Contacts" breadcrumbItem="User Grid" />
+          <Breadcrumbs title="" breadcrumbItem="User Grid" />
           {
             isLoading ? <Spinners setLoading={setLoading} />
               :

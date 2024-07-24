@@ -1284,7 +1284,7 @@ const fakeBackend = () => {
                 replyId: newReplyId,
                 user: {
                   name: "Admin",
-                  profile: "avatar1",
+                  profile: "avatar6",
                 },
                 comment: params.replyText,
                 time: `${mins} mins ago`,

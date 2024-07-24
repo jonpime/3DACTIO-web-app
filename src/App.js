@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { createSelector } from "reselect";
 import { Routes, Route } from "react-router-dom";
 import { layoutTypes } from "./constants/layout";
+
 // Import Routes all
 import { authProtectedRoutes, publicRoutes } from "./routes";
 
@@ -40,7 +41,6 @@ fakeBackend();
 // init firebase backend
 // initFirebaseBackend(firebaseConfig);
 
-
 const getLayout = (layoutType) => {
   let Layout = VerticalLayout;
   switch (layoutType) {
@@ -57,6 +57,14 @@ const getLayout = (layoutType) => {
 };
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000); // Duración del preloader, puedes ajustarlo
+    return () => clearTimeout(timer);
+  }, []);
 
   const LayoutProperties = createSelector(
     (state) => state.Layout,
@@ -73,32 +81,47 @@ const App = () => {
 
   return (
     <React.Fragment>
-      <Routes>
-        {publicRoutes.map((route, idx) => (
-          <Route
-            path={route.path}
-            element={
-              <NonAuthLayout>
-                {route.component}
-              </NonAuthLayout>
-            }
-            key={idx}
-            exact={true}
-          />
-        ))}
+      {isLoading ? (
+        <div id="preloader">
+          <div id="status">
+            <div className="spinner-chase">
+              <div className="chase-dot"></div>
+              <div className="chase-dot"></div>
+              <div className="chase-dot"></div>
+              <div className="chase-dot"></div>
+              <div className="chase-dot"></div>
+              <div className="chase-dot"></div>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <Routes>
+          {publicRoutes.map((route, idx) => (
+            <Route
+              path={route.path}
+              element={
+                <NonAuthLayout>
+                  {route.component}
+                </NonAuthLayout>
+              }
+              key={idx}
+              exact={true}
+            />
+          ))}
 
-        {authProtectedRoutes.map((route, idx) => (
-          <Route
-            path={route.path}
-            element={
-              <Authmiddleware>
-                <Layout>{route.component}</Layout>
-              </Authmiddleware>}
-            key={idx}
-            exact={true}
-          />
-        ))}
-      </Routes>
+          {authProtectedRoutes.map((route, idx) => (
+            <Route
+              path={route.path}
+              element={
+                <Authmiddleware>
+                  <Layout>{route.component}</Layout>
+                </Authmiddleware>}
+              key={idx}
+              exact={true}
+            />
+          ))}
+        </Routes>
+      )}
     </React.Fragment>
   );
 };

@@ -48,6 +48,8 @@ const SidebarContent = props => {
           }
         }
       }
+
+      
       scrollElement(item);
       return false;
     }
@@ -154,73 +156,8 @@ const SidebarContent = props => {
             </li>
             <li>
               <Link to="/#" className="has-arrow ">
-                <i className="bx bx-briefcase-alt-2"></i>
-                <span>{props.t("Business Plan")}</span>
-              </Link>
-              <ul className="sub-menu">
-                <li>
-                  <Link to="/company-profile">{props.t("Company Profile")}</Link>
-                </li>
-                <li>
-                  <Link to="/business-ideas">{props.t("Business Ideas")}</Link>
-                </li>
-                <li>
-                  <Link to="/develop-company-dna">{props.t("Develop Company DNA")}</Link>
-                </li>
-                <li>
-                  <Link to="/company-dna">{props.t("Company DNA")}</Link>
-                </li>
-                <li>
-                  <Link to="/industry-analysis">{props.t("Industry Analysis")}</Link>
-                </li>
-                <li>
-                  <Link to="/pestle-analysis"> {props.t("PESTLE Analysis")}</Link>
-                </li>
-                <li>
-                  <Link to="/swot-analysis">{props.t("SWOT Analysis")}</Link>
-                </li>
-                <li>
-                  <Link to="/business-strategy">{props.t("Business Strategy")}</Link>
-                </li>
-                <li>
-                  <Link to="/strategy-matrix">{props.t("Strategy Matrix")}</Link>
-                </li>
-                <li>
-                  <Link to="/summary">{props.t("Summary")}</Link>
-                </li>
-                <li>
-                  <Link to="/business-model-canvas">{props.t("Business Model Canvas")}</Link>
-                </li>
-                <li>
-                  <Link to="/cash-flow">{props.t("Cash Flow Analysis")}</Link>
-                </li>
-                <li>
-                  <Link to="/kris">{props.t("KRIs")}</Link>
-                </li>
-                <li>
-                  <Link to="/business-plan">{props.t("Business Plan")}</Link>
-                </li>
-                <li>
-                  <Link to="/investor-pack">{props.t("Investor Pack")}</Link>               
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link to="/calendar" >
-                <i className="bx bx-calendar"></i>
-                <span>{props.t("Calendar")}</span>
-                </Link>
-            </li>
-            <li>
-              <Link to="/chat" >
-                <i className="bx bx-chat"></i>
-                <span>{props.t("Chat")}</span>
-              </Link>
-            </li>
-            <li>
-              <Link to="/#" className="has-arrow ">
                 <i className="bx bxs-user-detail"></i>
-                <span>{props.t("Contacts")}</span>
+                <span>{props.t("App Admin")}</span>
               </Link>
               <ul className="sub-menu">
                 <li>
@@ -235,56 +172,113 @@ const SidebarContent = props => {
               </ul>
             </li>            
             <li>
-              <Link to="/#" className="has-arrow">
-                <i className="bx bx-user-circle"></i>
-                <span>{props.t("Authentication")}</span>
+              <Link to="/#" className="has-arrow ">
+                <i className="bx bx-briefcase-alt-2"></i>
+                <span>{props.t("Business Blueprint")}</span>
               </Link>
               <ul className="sub-menu">
                 <li>
-                  <Link to="/pages-login">{props.t("Login")}</Link>
+                  <Link to="/company-profile">{props.t("Company Profile")}</Link>
                 </li>
                 <li>
-                  <Link to="/pages-register">{props.t("Register")}</Link>
-                </li>
-                <li>
-                  <Link to="/page-recoverpw">
-                    {props.t("Recover Password")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/auth-lock-screen">{props.t("Lock Screen")}</Link>
-                </li>
-                <li>
-                  <Link to="/page-confirm-mail">{props.t("Confirm Mail")}</Link>
-                </li>
-                <li>
-                  <Link to="/auth-email-verification">
-                    {props.t("Email Verification")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/auth-two-step-verification">
-                    {props.t("Two Step Verification")}
-                  </Link>
+                  <Link to="/company-dna">{props.t("Company DNA")}</Link>
                 </li>
               </ul>
             </li>
             <li>
               <Link to="/#" className="has-arrow ">
-                <i className="bx bx-file"></i>
-                <span>{props.t("Utility")}</span>
+                <i className="bx bx-dna"></i>
+                <span>{props.t("Ideate Module")}</span>
               </Link>
               <ul className="sub-menu">
                 <li>
-                  <Link to="/pages-faqs">{props.t("FAQs")}</Link>
+                  <Link to="/business-ideas">{props.t("Business Ideas")}</Link>
+                </li>
+                <li>
+                  <Link to="/develop-company-dna">{props.t("Develop Company DNA")}</Link>
+                </li>
+                <li>
+                  <Link to="/industry-analysis">{props.t("Industry Analysis")}</Link>
+                </li>
+                <li>
+                  <Link to="/pestle-analysis">{props.t("PESTLE Analysis")}</Link>
+                </li>
+                <li>
+                  <Link to="/swot-analysis">{props.t("SWOT Analysis")}</Link>
                 </li>
               </ul>
+            </li>
+            <li>
+              <Link to="/#" className="has-arrow ">
+                <i className="bx bx-building-house"></i>
+                <span>{props.t("Visualise Module")}</span>
+              </Link>
+              <ul className="sub-menu">
+                <li>
+                  <Link to="/business-model-canvas">{props.t("Business Model Canvas")}</Link>
+                </li>
+                <li>
+                  <Link to="/business-strategy">{props.t("Business Strategy")}</Link>
+                </li>
+                <li>
+                  <Link to="/strategy-matrix">{props.t("Strategy Matrix")}</Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link to="/#" className="has-arrow ">
+                <i className="bx bx-calculator"></i>
+                <span>{props.t("Plan Module")}</span>
+              </Link>
+              <ul className="sub-menu">
+                <li>
+                  <Link to="/summary">{props.t("Strategy Summary")}</Link>
+                </li>
+                <li>
+                  <Link to="/cash-flow">{props.t("Cash Flow Analysis")}</Link>
+                </li>
+                <li>
+                  <Link to="/kris">{props.t("KRIs")}</Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link to="/#" className="has-arrow ">
+                <i className="bx bx-wallet"></i>
+                <span>{props.t("Execute Module")}</span>
+              </Link>
+              <ul className="sub-menu">
+                <li>
+                  <Link to="/business-plan">{props.t("Business Plan")}</Link>
+                </li>
+                <li>
+                  <Link to="/investor-pack">{props.t("Investor Pack")}</Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link to="/calendar">
+                <i className="bx bx-calendar"></i>
+                <span>{props.t("Calendar")}</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/chat">
+                <i className="bx bx-chat"></i>
+                <span>{props.t("Chat with 3D ACTIO")}</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/pages-faqs">
+                <i className="bx bx-file"></i>
+                <span>{props.t("FAQs")}</span>
+              </Link>
             </li>
           </ul>
         </div>
       </SimpleBar>
     </React.Fragment>
-  );
+  );  
 };
 
 SidebarContent.propTypes = {

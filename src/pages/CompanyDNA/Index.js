@@ -22,7 +22,7 @@ const CompanyDNA = () => {
                         style={{ width: '100%', height: '100%', border: 'none', marginTop: '-135px' }}
                     ></iframe>
                     <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '35px', backgroundColor: 'white' }}></div>
-                    <div style={{ position: 'absolute', top: 0, left: 0, bottom: 0, width: '46px', backgroundColor: 'white' }}></div>
+                    <div style={{ position: 'absolute', top: 0, left: 0, bottom: 0, width: '50px', backgroundColor: 'white' }}></div>
                 </div>
             </Container>
         </div>

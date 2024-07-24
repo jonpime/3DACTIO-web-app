@@ -8,7 +8,7 @@ const ActivityComp = () => {
     <React.Fragment>
       <Card>
         <CardBody>
-          <CardTitle className="mb-5">Activity</CardTitle>
+          <CardTitle className="mb-5">Calendar Activity</CardTitle>
           <ul className="verti-timeline list-unstyled">
             {
               (activityDataDashboard || [])?.map((item, index) => (

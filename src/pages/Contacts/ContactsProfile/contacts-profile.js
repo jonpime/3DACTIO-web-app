@@ -93,7 +93,7 @@ const ContactsProfile = props => {
       <div className="page-content">
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Contacts" breadcrumbItem="Profile" />
+          <Breadcrumbs title="" breadcrumbItem="Profile" />
 
           <Row>
             <Col xl="4">

@@ -52,7 +52,7 @@ const Calender = props => {
       category: (event && event.category) || '',
     },
     validationSchema: Yup.object({
-      title: Yup.string().required("Please Enter Your Event Name"),
+      title: Yup.string().required("Please Enter Your Entry Name"),
       category: Yup.string().required("Please Enter Your Billing Name"),
     }),
     onSubmit: (values) => {
@@ -252,7 +252,7 @@ const Calender = props => {
       <div className="page-content">
         <Container fluid={true}>
           {/* Render Breadcrumb */}
-          <Breadcrumbs title="Calendar" breadcrumbItem="Full Calendar" />
+          <Breadcrumbs title="" breadcrumbItem="3D ACTIO Calendar" />
           <Row>
             <Col xs={12}>
               <Row>
@@ -285,7 +285,7 @@ const Calender = props => {
                           onClick={toggle}
                         >
                           <i className="mdi mdi-plus-circle-outline me-1" />
-                          Create New Event
+                          Create New Entry
                         </Button>
                       </div>
 
@@ -352,7 +352,7 @@ const Calender = props => {
                     centered
                   >
                     <ModalHeader toggle={toggle} tag="h5">
-                      {!!isEdit ? "Edit Event" : "Add Event"}
+                      {!!isEdit ? "Edit Entry" : "Add Entry"}
                     </ModalHeader>
                     <ModalBody className="p-4">
                       <Form
@@ -365,11 +365,11 @@ const Calender = props => {
                         <Row>
                           <Col xs={12}>
                             <div className="mb-3">
-                              <Label>Event Name</Label>
+                              <Label>Entry Name</Label>
                               <Input
                                 name="title"
                                 type="text"
-                                placeholder="Insert Event Name"
+                                placeholder="Insert Entry Name"
                                 onChange={categoryValidation.handleChange}
                                 onBlur={categoryValidation.handleBlur}
                                 value={categoryValidation.values.title || ""}
