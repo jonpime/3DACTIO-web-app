@@ -411,15 +411,12 @@ const ContactsList = () => {
                               : false
                           }
                         >
-                          <option>Photoshop</option>
-                          <option>illustrator</option>
-                          <option>Html</option>
-                          <option>Php</option>
-                          <option>Java</option>
-                          <option>Python</option>
-                          <option>UI/UX Designer</option>
-                          <option>Ruby</option>
-                          <option>Css</option>
+                          <option>Our Customer</option>
+                          <option>Our People</option>
+                          <option>Our Operations</option>
+                          <option>Our HSE</option>
+                          <option>Our Financials</option>
+
                         </Input>
                         {validation.touched.tags &&
                           validation.errors.tags ? (

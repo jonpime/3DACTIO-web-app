@@ -396,12 +396,9 @@ const Calender = props => {
                                   categoryValidation.touched.category && categoryValidation.errors.category ? true : false
                                 }
                               >
-                                <option value="bg-danger">Danger</option>
-                                <option value="bg-success">Success</option>
-                                <option value="bg-primary">Primary</option>
-                                <option value="bg-info">Info</option>
-                                <option value="bg-dark">Dark</option>
-                                <option value="bg-warning">Warning</option>
+                                <option value="bg-danger">Strategic Option</option>
+                                <option value="bg-success">Tactical Activity</option>
+
                               </Input>
                               {categoryValidation.touched.category && categoryValidation.errors.category ? (
                                 <FormFeedback type="invalid">{categoryValidation.errors.category}</FormFeedback>

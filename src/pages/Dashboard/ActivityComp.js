@@ -32,7 +32,7 @@ const ActivityComp = () => {
             }
           </ul>
           <div className="text-center mt-4">
-            <Link to="#" className="btn btn-primary waves-effect waves-light btn-sm">
+            <Link to="/calendar" className="btn btn-primary waves-effect waves-light btn-sm">
               View More <i className="mdi mdi-arrow-right ms-1" />
             </Link>
           </div>

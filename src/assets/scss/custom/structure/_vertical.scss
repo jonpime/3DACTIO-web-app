@@ -500,6 +500,9 @@ body[data-sidebar="dark"] {
                 color: $sidebar-dark-menu-item-active-color !important;
             }
         }
+        .active-icon {
+          color: $sidebar-dark-menu-item-active-color; // Color definido para el icono activo
+        }
     }
 
     .menu-title {

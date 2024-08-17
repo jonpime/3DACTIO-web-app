@@ -25,6 +25,7 @@ import LatestTranaction from "./LatestTranaction";
 import FillingPercentage from "./filling"
 import StrategyElements from "./strategyelements"
 import Vision3D from "./vision";
+import HomeElements from "./Home";
 
 //Import Breadcrumb
 import Breadcrumbs from "../../components/Common/Breadcrumb";
@@ -146,7 +147,7 @@ const Dashboard = props => {
 
           <Row>
             <Col lg="12">
-              <LatestTranaction />
+              <HomeElements item={item}/>  
             </Col>
           </Row>
         </Container>
