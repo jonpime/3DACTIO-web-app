@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/3DACTIO-web-app/static/css/main.52123c78.css",
-    "main.js": "/3DACTIO-web-app/static/js/main.60646dd4.js",
+    "main.js": "/3DACTIO-web-app/static/js/main.35e8b16e.js",
     "static/js/239.7f397e79.chunk.js": "/3DACTIO-web-app/static/js/239.7f397e79.chunk.js",
     "static/js/213.0693d5e8.chunk.js": "/3DACTIO-web-app/static/js/213.0693d5e8.chunk.js",
     "static/js/455.d7b7a8ad.chunk.js": "/3DACTIO-web-app/static/js/455.d7b7a8ad.chunk.js",
@@ -81,8 +81,8 @@
     "static/media/logo-light.svg": "/3DACTIO-web-app/static/media/logo-light.0b3d4d84f0814d937bc807b9a3b08160.svg",
     "static/media/logo.svg": "/3DACTIO-web-app/static/media/logo.1aa609f4f41ad39f8b480ef732fa650f.svg",
     "static/media/amazon.svg": "/3DACTIO-web-app/static/media/amazon.47de085da2d8c24b32724b0ec057402a.svg",
-    "static/media/mailchimp.svg": "/3DACTIO-web-app/static/media/mailchimp.f75e1d7ee98b015d5ceb9b9c6216d2d0.svg",
     "index.html": "/3DACTIO-web-app/index.html",
+    "static/media/mailchimp.svg": "/3DACTIO-web-app/static/media/mailchimp.f75e1d7ee98b015d5ceb9b9c6216d2d0.svg",
     "static/media/flutter.svg": "/3DACTIO-web-app/static/media/flutter.f0ee577433160fa19746210d554c6c0d.svg",
     "static/media/upwork.svg": "/3DACTIO-web-app/static/media/upwork.f39a699322a0c6a89acfc64412c199ea.svg",
     "static/media/wechat.svg": "/3DACTIO-web-app/static/media/wechat.390bf08b6bf6ade2ae87453a1a208c47.svg",
@@ -94,13 +94,13 @@
     "static/media/airbnb.svg": "/3DACTIO-web-app/static/media/airbnb.c9f6f43d5cd777ae2a2ab458fc9309de.svg",
     "static/media/adobe.svg": "/3DACTIO-web-app/static/media/adobe.18e56447696e4920ce55f2008547dba4.svg",
     "main.52123c78.css.map": "/3DACTIO-web-app/static/css/main.52123c78.css.map",
-    "main.60646dd4.js.map": "/3DACTIO-web-app/static/js/main.60646dd4.js.map",
+    "main.35e8b16e.js.map": "/3DACTIO-web-app/static/js/main.35e8b16e.js.map",
     "239.7f397e79.chunk.js.map": "/3DACTIO-web-app/static/js/239.7f397e79.chunk.js.map",
     "213.0693d5e8.chunk.js.map": "/3DACTIO-web-app/static/js/213.0693d5e8.chunk.js.map",
     "455.d7b7a8ad.chunk.js.map": "/3DACTIO-web-app/static/js/455.d7b7a8ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.52123c78.css",
-    "static/js/main.60646dd4.js"
+    "static/js/main.35e8b16e.js"
   ]
 }
