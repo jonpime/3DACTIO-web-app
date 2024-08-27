@@ -1,7 +1,10 @@
 {
   "files": {
-    "main.css": "/3DACTIO-web-app/static/css/main.79462248.css",
-    "main.js": "/3DACTIO-web-app/static/js/main.38c259dc.js",
+    "main.css": "/3DACTIO-web-app/static/css/main.52123c78.css",
+    "main.js": "/3DACTIO-web-app/static/js/main.35e8b16e.js",
+    "static/js/239.7f397e79.chunk.js": "/3DACTIO-web-app/static/js/239.7f397e79.chunk.js",
+    "static/js/213.0693d5e8.chunk.js": "/3DACTIO-web-app/static/js/213.0693d5e8.chunk.js",
+    "static/js/455.d7b7a8ad.chunk.js": "/3DACTIO-web-app/static/js/455.d7b7a8ad.chunk.js",
     "static/media/img-2.jpg": "/3DACTIO-web-app/static/media/img-2.9ad853b2a11d405bb46e.jpg",
     "static/media/img-3.jpg": "/3DACTIO-web-app/static/media/img-3.282f0d0a9f400608e5fa.jpg",
     "static/media/materialdesignicons-webfont.eot": "/3DACTIO-web-app/static/media/materialdesignicons-webfont.52adde0de9840940801f.eot",
@@ -10,8 +13,6 @@
     "static/media/img-1.jpg": "/3DACTIO-web-app/static/media/img-1.c8a39a7a50ed65dd7307.jpg",
     "static/media/boxicons.svg": "/3DACTIO-web-app/static/media/boxicons.5e81160c5f41fcc12b38.svg",
     "static/media/fa-brands-400.svg": "/3DACTIO-web-app/static/media/fa-brands-400.3c45c98f6f6c1b009c08.svg",
-    "static/media/logo-light.png": "/3DACTIO-web-app/static/media/logo-light.a3f428862d062945b012.png",
-    "static/media/logo-dark.png": "/3DACTIO-web-app/static/media/logo-dark.fa03ca8c2a66cd02733a.png",
     "static/media/materialdesignicons-webfont.woff?v=5.8.55": "/3DACTIO-web-app/static/media/materialdesignicons-webfont.d06df622bc47f0db9812.woff",
     "static/media/img-7.jpg": "/3DACTIO-web-app/static/media/img-7.f6859a84e2d525273230.jpg",
     "static/media/materialdesignicons-webfont.woff2?v=5.8.55": "/3DACTIO-web-app/static/media/materialdesignicons-webfont.6147fc3741c622c5de2c.woff2",
@@ -19,6 +20,8 @@
     "static/media/img-5.jpg": "/3DACTIO-web-app/static/media/img-5.feb6e033b5d8dabf2c71.jpg",
     "static/media/img-1.png": "/3DACTIO-web-app/static/media/img-1.fc0c27967f674639fc3d.png",
     "static/media/img-2.png": "/3DACTIO-web-app/static/media/img-2.dac4be2a91714e68568f.png",
+    "static/media/logo-light.png": "/3DACTIO-web-app/static/media/logo-light.c81f52a9ade3c5da459a.png",
+    "static/media/logo-dark.png": "/3DACTIO-web-app/static/media/logo-dark.c872055ce84b6827493d.png",
     "static/media/boxicons.eot": "/3DACTIO-web-app/static/media/boxicons.6829ebb16362074c0c30.eot",
     "static/media/boxicons.woff": "/3DACTIO-web-app/static/media/boxicons.dcaf6a260cca4a061aff.woff",
     "static/media/boxicons.ttf": "/3DACTIO-web-app/static/media/boxicons.e2ffa5b9254ec286b380.ttf",
@@ -75,12 +78,12 @@
     "static/media/avatar-5.jpg": "/3DACTIO-web-app/static/media/avatar-5.a5c59cee7b3dfda1156d.jpg",
     "static/media/avatar-2.jpg": "/3DACTIO-web-app/static/media/avatar-2.feb0f89de58f0ef9b424.jpg",
     "static/media/adobe-photoshop.svg": "/3DACTIO-web-app/static/media/adobe-photoshop.1fb5c34343073e70e33683f7e1917857.svg",
+    "static/media/logo-light.svg": "/3DACTIO-web-app/static/media/logo-light.0b3d4d84f0814d937bc807b9a3b08160.svg",
+    "static/media/logo.svg": "/3DACTIO-web-app/static/media/logo.1aa609f4f41ad39f8b480ef732fa650f.svg",
     "static/media/amazon.svg": "/3DACTIO-web-app/static/media/amazon.47de085da2d8c24b32724b0ec057402a.svg",
-    "static/media/mailchimp.svg": "/3DACTIO-web-app/static/media/mailchimp.f75e1d7ee98b015d5ceb9b9c6216d2d0.svg",
     "index.html": "/3DACTIO-web-app/index.html",
+    "static/media/mailchimp.svg": "/3DACTIO-web-app/static/media/mailchimp.f75e1d7ee98b015d5ceb9b9c6216d2d0.svg",
     "static/media/flutter.svg": "/3DACTIO-web-app/static/media/flutter.f0ee577433160fa19746210d554c6c0d.svg",
-    "static/media/logo-light.svg": "/3DACTIO-web-app/static/media/logo-light.96c274dae02dae215c95d0a7ef202e3a.svg",
-    "static/media/logo.svg": "/3DACTIO-web-app/static/media/logo.a0143fa8ed5f53bf9ab4425b9a374176.svg",
     "static/media/upwork.svg": "/3DACTIO-web-app/static/media/upwork.f39a699322a0c6a89acfc64412c199ea.svg",
     "static/media/wechat.svg": "/3DACTIO-web-app/static/media/wechat.390bf08b6bf6ade2ae87453a1a208c47.svg",
     "static/media/reddit.svg": "/3DACTIO-web-app/static/media/reddit.a106ad19c5ab251e64845c72131cc181.svg",
@@ -90,11 +93,14 @@
     "static/media/spotify.svg": "/3DACTIO-web-app/static/media/spotify.eefab5a9268d3721c294c608709c049e.svg",
     "static/media/airbnb.svg": "/3DACTIO-web-app/static/media/airbnb.c9f6f43d5cd777ae2a2ab458fc9309de.svg",
     "static/media/adobe.svg": "/3DACTIO-web-app/static/media/adobe.18e56447696e4920ce55f2008547dba4.svg",
-    "main.79462248.css.map": "/3DACTIO-web-app/static/css/main.79462248.css.map",
-    "main.38c259dc.js.map": "/3DACTIO-web-app/static/js/main.38c259dc.js.map"
+    "main.52123c78.css.map": "/3DACTIO-web-app/static/css/main.52123c78.css.map",
+    "main.35e8b16e.js.map": "/3DACTIO-web-app/static/js/main.35e8b16e.js.map",
+    "239.7f397e79.chunk.js.map": "/3DACTIO-web-app/static/js/239.7f397e79.chunk.js.map",
+    "213.0693d5e8.chunk.js.map": "/3DACTIO-web-app/static/js/213.0693d5e8.chunk.js.map",
+    "455.d7b7a8ad.chunk.js.map": "/3DACTIO-web-app/static/js/455.d7b7a8ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79462248.css",
-    "static/js/main.38c259dc.js"
+    "static/css/main.52123c78.css",
+    "static/js/main.35e8b16e.js"
   ]
 }
